@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/comment/comment",
+    "pages/newsong/newsong",
+    "pages/gedanSquare/gedanSquare",
+    "pages/rankingList/rankingList",
+    "pages/search/search",
+    "pages/mv/mv",
+    "pages/songSheet/songSheet",
+    "pages/player/player",
+    "pages/logs/logs",
+    "pages/settings/settings",
+    "pages/login/login",
+    "pages/blog-edit/blog-edit",
+    "pages/userManage/userManage"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33CC99",
+    "navigationBarTitleText": "微信云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

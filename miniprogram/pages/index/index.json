@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "x-author": "/components/author/author",
+    "x-blog-card": "/components/blog-card/blog-card",
+    "x-blog-control": "/components/blog-control/blog-control"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,46 @@
+<!--设置-->
+<view class='top_bg'></view>
+
+<view class='user_box'>
+    <view class='user_img'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="chooseItem">
+    <navigator url="/pages/login/login" hover-class="none" class='item_box'>
+      <view class='item_left'>
+        <image src='../../images/mine/reservation.png'></image>
+        <text>登陆</text>
+      </view>
+      <image src='../../images/mine/right.png'></image>
+    </navigator>
+    <!-- <label bindtap="toOrder" hover-class="none" class='item_box'>
+      <view class='item_left'>
+        <image src='../../images/mine/follow.png'></image>
+        <text>学生预约信息</text>
+      </view>
+      <image src='../../images/mine/right.png'></image>
+    </label> -->
+    <navigator url="/pages/userManage/userManage?title=个人中心" hover-class="none" class='item_box'>
+      <view class='item_left'>
+        <image src='../../images/mine/admission.png'></image>
+        <text>用户管理</text>
+      </view>
+      <image src='../../images/mine/right.png'></image>
+    </navigator>
+    <!-- <navigator url="./help/help" hover-class="none" class='item_box'>
+      <view class='item_left'>
+        <image src='../../images/mine/coupon.png'></image>
+        <text>软件说明</text>
+      </view>
+      <image src='../../images/mine/right.png'></image>
+    </navigator> -->
+    <!-- <navigator url="./guide/guide" hover-class="none" class='item_box'>
+      <view class='item_left'>
+        <image src='../../images/mine/guide.png'></image>
+        <text>咨询指南</text>
+      </view>
+      <image src='../../images/mine/right.png'></image>
+    </navigator> -->
+  </view>

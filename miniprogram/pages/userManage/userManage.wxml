@@ -1,0 +1,53 @@
+<!--pages/settings/UserManage/UserManage.wxml-->
+<view class='infoMsg'>
+ <view>
+  <label>昵称</label>
+  <label>头像</label>
+  <label>操作</label>
+ </view>
+ <view wx:for="{{list}}" wx:key="{{item._id}}">
+  <label>{{item.nickName}}</label>
+  <label><image class='header-img' src='{{item.avatarUrl}}'></image></label>
+  <label>
+   <text data-id='{{item._id}}' bindtap='delData'>删除</text>
+   <text data-id='{{item}}' bindtap='detailData'>查看</text>
+  </label>
+ </view>
+</view>
+
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+  <!--drawer content-->
+  <view class="drawer_title">用户详情</view>
+  <view class="drawer_content">
+    <view class="top grid">
+      <label class="title col-0">昵称：</label>
+      <label class="input_base input_h30 col-1">{{user.nickName}}</label>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">头像：</label>
+      <label class="input_base input_h30 col-1"><image class='header-img' src='{{user.avatarUrl}}'></image></label>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">性别：</label>
+      <label class="input_base input_h30 col-1">{{user.gender}}</label>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">管理员：</label>
+      <label class="input_base input_h30 col-1">{{user.admin}}</label>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">创建时间：</label>
+      <label class="input_base input_h30 col-1">{{user.createTime}}</label>
+    </view>
+  </view>
+  <!-- <view class="btn_oks"> -->
+  <view class="btn_ok" bindtap="powerDrawer">确定</view>
+  <!-- </view> -->
+
+</view>
+
